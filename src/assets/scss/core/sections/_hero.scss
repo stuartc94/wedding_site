@@ -25,6 +25,18 @@
 	}
 }
 
+.centered-header {
+	position: absolute;
+	top: 15%;
+	left: 40%;
+	font-family: Lucida Handwriting;
+}
+
+.header-section {
+	position: relative;
+	text-align: center;
+}
+
 @include media( '<=medium' ) {
 
 	.hero {
@@ -49,6 +61,18 @@
 			}
 		}
 	}
+
+	.centered-header {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		font-family: Lucida Handwriting;
+	}
+	
+	.header-section {
+		position: relative;
+		text-align: center;
+	}
 }
 
 @include media( '>medium' ) {
@@ -68,5 +92,17 @@
 		> .hero-figure + .hero-content {
 			margin-top: $hero--inner-padding-v_desktop;
 		}
+	}
+
+	.centered-header {
+		position: absolute;
+		top: 10%;
+		left: 40%;
+		font-family: Lucida Handwriting;
+	}
+	
+	.header-section {
+		position: relative;
+		text-align: center;
 	}
 }
