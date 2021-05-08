@@ -44,3 +44,17 @@
         }
 	}
 }
+
+.target-logo {
+    margin-top: 25%;
+}
+
+.test-background {
+	background-image: url('./../../../../assets/images/marble.jpg');
+}
+
+@include media( '<=medium' ) {
+    .target-logo {
+        margin-top: 25%;
+    }
+}

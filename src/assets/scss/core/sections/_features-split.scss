@@ -8,6 +8,27 @@
 	.section-header {
 		padding-bottom: $features-split-header--padding__mobile;
 	}
+
+	.info-header {
+		font-family: 'Roboto', sans-serif;
+		color: #722f37;
+	}
+
+	.date-info {
+		color: #c53500;
+	}
+
+	.info-blurb {
+		background: #dd8e6b1f;
+		padding: 23px
+	}
+
+	.grunge-back {
+		background-size: cover;
+		background-position: center;
+		//background-image: url('./../../../svg/grunge.svg') !important;
+	}
+
 }
 
 @include media( '>medium' ) {

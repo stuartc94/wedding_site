@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const FooterNav = ({
   className,
@@ -18,18 +18,15 @@ const FooterNav = ({
       className={classes}
     >
       <ul className="list-reset">
-        <li>
-          <Link to="#0">Contact</Link>
-        </li>
-        <li>
-          <Link to="#0">About us</Link>
-        </li>
-        <li>
-          <Link to="#0">FAQ's</Link>
-        </li>
-        <li>
-          <Link to="#0">Support</Link>
-        </li>
+      <li>
+        <Link smooth to="#story">Our Story</Link>
+      </li>
+      <li>
+        <Link smooth to="#info">When & Where</Link>
+      </li>
+      <li>
+        <Link smooth to="#registry">Registry</Link>
+      </li>
       </ul>
     </nav>
   );

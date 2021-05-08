@@ -132,6 +132,10 @@ img.has-shadow {
 	border-radius: $img-radius;
 }
 
+.header-style {
+	font-size: 75px;
+}
+
 // Dividers
 .has-top-divider {
     @include divider(before);

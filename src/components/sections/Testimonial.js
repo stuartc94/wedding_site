@@ -1,7 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
+import Image from '../elements/Image';
 import SectionHeader from './partials/SectionHeader';
+import { size } from 'lodash';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -24,7 +26,7 @@ const Testimonial = ({
 }) => {
 
   const outerClasses = classNames(
-    'testimonial section',
+    'testimonial section test-background',
     topOuterDivider && 'has-top-divider',
     bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
@@ -44,75 +46,76 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Customer testimonials',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+    title: 'Regestries'
   };
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
-      <div className="container">
-        <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
-          <div className={tilesClasses}>
+    <div id="registry">
+      <section
+        {...props}
+        className={outerClasses}
+      >
+        <div className="container">
+          <div className={innerClasses}>
+            <SectionHeader data={sectionHeader} className="center-content" />
+            <h2 style={{fontFamily: 'Roboto, sans-serif', color: '#722f37', textAlign: 'center', fontSize: '25px', marginTop: '-50px'}}>Here are our registries we have setup</h2>
+            <div className={tilesClasses}>
 
-            <div className="tiles-item reveal-from-right" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Roman Level</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
-                  </span>
-                </div>
+              <div className="tiles-item reveal-from-right" data-reveal-delay="200">
+              <a href="https://www.williams-sonoma.com/registry/qdjgl2ksdh/registry-list.html" target="blank">
+                <Image
+                  src={require('./../../assets/images/Williams-Sonoma.png')}
+                  alt="Willams Sonoma"
+                  width={343}
+                  height={96} 
+                  />
+                </a>
               </div>
+
+              <div className="tiles-item reveal-from-bottom" href="">
+              <a href="https://www.zola.com/registry/stuartandhailey" target="blank">
+                <Image
+                  src={require('./../../assets/images/Zola-Logo.png')}
+                  alt="Willams Sonoma"
+                  width={343}
+                  height={96} 
+                  />
+                </a>
+              </div>
+
             </div>
 
-            <div className="tiles-item reveal-from-bottom">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Diana Rynzhuk</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
-                  </span>
-                </div>
-              </div>
-            </div>
+            <h2 className='' style={{fontFamily: 'Roboto, sans-serif', color: '#722f37', textAlign: 'center', fontSize: '25px', marginTop: '30px', marginBottom: '25px'}}>Places we would love a gift card from!</h2>
+            <div className={tilesClasses}>
 
-            <div className="tiles-item reveal-from-left" data-reveal-delay="200">
-              <div className="tiles-item-inner">
-                <div className="testimonial-item-content">
-                  <p className="text-sm mb-0">
-                    — Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum cillum dolore eu fugiat.
-                      </p>
-                </div>
-                <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                  <span className="testimonial-item-name text-color-high">Ben Stafford</span>
-                  <span className="text-color-low"> / </span>
-                  <span className="testimonial-item-link">
-                    <a href="#0">AppName</a>
-                  </span>
-                </div>
+              <div className="tiles-item reveal-from-bottom" href="">
+              <a href="https://www.zola.com/registry/stuartandhailey" target="blank">
+                <Image
+                  src={require('./../../assets/images/REI.png')}
+                  alt="Willams Sonoma"
+                  width={343}
+                  height={96} 
+                  />
+                </a>
               </div>
-            </div>
 
+              <div className="tiles-item reveal-from-left" data-reveal-delay="200">
+              <a href="https://www.target.com/c/gift-cards/-/N-5xsxu" target="blank">
+                <Image
+                  src={require('./../../assets/images/target-logo.png')}
+                  alt="Willams Sonoma"
+                  width={343}
+                  height={96}
+                  className="target-logo"
+                  />
+                </a>
+              </div>
+
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 

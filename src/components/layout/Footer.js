@@ -23,7 +23,7 @@ const Footer = ({
 }) => {
 
   const classes = classNames(
-    'site-footer center-content-mobile',
+    'site-footer center-content-mobile footer-background',
     topOuterDivider && 'has-top-divider',
     className
   );
@@ -39,13 +39,8 @@ const Footer = ({
             'site-footer-inner',
             topDivider && 'has-top-divider'
           )}>
-          <div className="footer-top space-between text-xxs">
-            <Logo />
-            <FooterSocial />
-          </div>
           <div className="footer-bottom space-between text-xxs invert-order-desktop">
             <FooterNav />
-            <div className="footer-copyright">Made by <a href="https://cruip.com">Cruip</a>. All right reserved</div>
           </div>
         </div>
       </div>

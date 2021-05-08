@@ -27,13 +27,29 @@
 
 .centered-header {
 	position: absolute;
-	top: 15%;
-	left: 40%;
-	font-family: Lucida Handwriting;
+	top: 40%;
+	text-align: center;
+	left: 14%;
+	font-size: 56px;
+	color: #ffeeec;
+	font-family: 'Dancing Script', cursive;
 }
+
+.underline-header {
+	border-bottom: solid 2px #ffeeec;
+	height: 7%;
+	width: 70%;
+}
+
+.under-title {
+	top: '3%';
+	font-size: 35px;
+}
+
 
 .header-section {
 	position: relative;
+	max-height: 650px;
 	text-align: center;
 }
 
@@ -64,14 +80,26 @@
 
 	.centered-header {
 		position: absolute;
-		top: 5%;
-		left: 0;
-		font-family: Lucida Handwriting;
+		text-align: center;
+		top: 40%;
+		font-size: 28px;
+		font-family: 'Dancing Script', cursive;
+	}
+
+	.underline-header {
+		height: 20%;
 	}
 	
 	.header-section {
 		position: relative;
 		text-align: center;
+		max-height: 350px !important;
+		background-size: cover;
+		background-position: center;
+	}
+
+	.carousel.carousel-slider {
+		max-height: 416px !important;
 	}
 }
 
@@ -96,13 +124,33 @@
 
 	.centered-header {
 		position: absolute;
-		top: 10%;
-		left: 40%;
-		font-family: Lucida Handwriting;
+		top: 40%;
+		left: 15%;
+		font-family: 'Dancing Script', cursive;
+
 	}
 	
-	.header-section {
-		position: relative;
+	.header-section-1 {
 		text-align: center;
+		height: 400px;
+		background-position: center;
+		background-size: cover;
+		//background-image: url('./../../../images/Header.jpg');
+	}
+
+	.header-section-2 {
+		text-align: center;
+		height: 400px;
+		background-position: center;
+		background-size: cover;
+		//background-image: url('./../../../images/Header.jpg');
+	}
+
+	.header-section-3 {
+		text-align: center;
+		height: 672px;
+		background-position: center;
+		background-size: cover;
+		//background-image: url('./../../../images/Header.jpg');
 	}
 }

@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Link } from 'react-router-dom';
-import Logo from './partials/Logo';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -85,7 +84,6 @@ const Header = ({
             'site-header-inner',
             bottomDivider && 'has-bottom-divider'
           )}>
-          <Logo />
           {!hideNav &&
             <>
               <button
@@ -110,19 +108,20 @@ const Header = ({
                     classNames(
                       'list-reset text-xs',
                       navPosition && `header-nav-${navPosition}`
-                    )}>
+                    )} style={{fontFamily:"Montserrat, sans-serif", fontSize: '100%'}}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Documentation</Link>
+                      <Link smooth to="#story">Our Story</Link>
                     </li>
+                    <li>
+                      <Link smooth to="#info">When & Where</Link>
+                    </li>
+                    <li>
+                      <Link smooth to="#registry">Registry</Link>
+                    </li>
+                    {/* <li>
+                      <link to="/gallery">Gallery</link>
+                    </li> */}
                   </ul>
-                  {!hideSignin &&
-                    <ul
-                      className="list-reset header-nav-right"
-                    >
-                      <li>
-                        <Link to="#0" className="button button-primary button-wide-mobile button-sm" onClick={closeMenu}>Sign up</Link>
-                      </li>
-                    </ul>}
                 </div>
               </nav>
             </>}

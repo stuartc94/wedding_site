@@ -6,7 +6,7 @@ $font--import:      'Inter:400,500,600,700,800';
 // The font set
 $font--family: (
 	heading: 	null,
-	base:		'"Inter", sans-serif',
+	base:		'Dancing Script, cursive',
 	code: 		'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
 	pre: 		'"Courier 10 Pitch", Courier, monospace'
 );
@@ -15,7 +15,7 @@ $font--family: (
 $font--scale: (
 	// key 		// font-size, line-height, kerning
 	alpha:   	( 52px, 62px, -0.3px ),
-	beta:    	( 44px, 54px, -0.3px ),
+	beta:    	( 75px, 54px, -0.3px ),
 	gamma:   	( 32px, 42px, -0.3px ),
 	delta:   	( 24px, 34px, -0.1px ),
 	epsilon: 	( 20px, 30px, -0.1px ),
